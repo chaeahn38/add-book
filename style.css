@@ -1,0 +1,95 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+*{
+  padding: 0;
+  margin: 0;
+}
+/* 폰트와 배경 설정 */
+body{
+  background-color: ghostwhite;
+  font-family: 'Jeju Myeongjo', serif;
+}
+input{
+  font-family: 'Jeju Myeongjo', serif;
+}
+button{
+  font-family: 'Jeju Myeongjo', serif;
+}
+
+/* 타이틀 */
+.container{
+  text-align: center;
+}
+.title{
+  display: inline-block;
+  margin: 40px 0px;
+}
+.description{
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: #000000c6;
+}
+
+/* 입력값 */
+.input{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+input{
+  text-align: center;
+  height: 20px;
+  border-radius: 0;
+  border: .5px solid #444;
+  padding: 5px;
+  background-color: ghostwhite;
+}
+#input-sentence{
+  margin-bottom: 5px;
+}
+
+/* 책꽂기 버튼 */
+.addBtn{
+  display: inline-block;
+  margin: 10px 0px;
+  padding: 3px;
+  background-color: #e8e8e8;
+  border: .5px solid #444;
+  cursor: pointer;
+}
+
+.rotate-btn{
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  margin: 20px 40px;
+  border: none;
+  text-decoration: underline;
+  background-color: ghostwhite;
+  cursor: pointer;
+}
+
+
+.book-sentence{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 8px;
+  border: none;
+  word-break: keep-all;
+}
+.active, .book-sentence:hover{
+  background-color: #ccc;
+}
+.book-info{
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #444;
+  display: none;
+}
+
+#bookshelf{
+  transform: rotate(-90deg);
+}
